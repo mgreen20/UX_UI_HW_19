@@ -169,7 +169,6 @@ a{
 @media screen and (max-width: 992px) {
     .navbar {display: none;}
     .line {display: none;}
-    
 }
 
 @media screen and (min-width: 993px) {
@@ -276,7 +275,56 @@ a{
 
 #linked{
     display: flex;
-    padding-top: 20%;
-    
+    padding-top: 20%;   
+}
+
+#resume{
+    align-content: center;
+    position: relative;
+    display: inline-block;
+    clear: both;
+    width: 50%;
+    margin-left: 60%;  
+}
+
+#dwnResume{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    width: 200px;
+    color: #f2f5f5;
+    background-color: #004C54;
+    border-radius: 7px;
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+      box-shadow: 0 0 5px -5px #3284BF;
+    }
+    to {
+      box-shadow: 0 0 5px 5px #3284BF;
+    }
+  }
+
+  @keyframes unglow {
+    from {
+      box-shadow: 0 0 0px -0px #3284BF;
+    }
+    to {
+      box-shadow: 0 0 0px 0px #3284BF;
+    }
+  }
+#dwnResume:hover{
+    color: #f2f5f5;
+    background-color: #3284BF;
+    border-color: #004C54;
+    box-shadow: 0px 0px 10px 5px #ACC0C6;
+    animation: unglow;    
+}
+
+#dwnResume:active{
+    transform: scale(.8);
+    animation: unglow;
     
 }
